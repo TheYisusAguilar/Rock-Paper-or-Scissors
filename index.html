@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Rock Paper or Scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <header>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+    </header>
+    <main>
+        <p class="instructions" id="instructions">
+            The first to reach 3 points wins.
+        </p>
+        <div class="scoreboard">
+            <p class="name player-name">USER</p>
+            <p class="name computer-name">CPU</p>
+            <p class="points">
+                <span id="user-points">0</span>
+                <span>-</span>
+                <span id="cpu-points">0</span>
+            </p>
+        </div>
+        <div class="choose-your-weapon" id="choose-your-weapon">
+            <h2>Choose your weapon for the next turn</h2>
+            <div class="weapon">
+                <button class="weapon" id="ROCK✊🏼">
+                    <img src="./assets/rock.png" alt="ROCK">
+                </button>
+                <button class="weapon" id="PAPER🖐🏼">
+                    <img src="./assets/paper.png" alt="PAPER">
+                </button>
+                <button class="weapon" id="SCISSORS✌🏼">
+                    <img src="./assets/scissors.png" alt="SCISSORS">
+                </button>
+            </div>
+        </div>
+        <div class="message disabled" id="message">
+            <p>
+                You used <span class="choice" id="user-choice">SCISSORS✌🏼</span>
+                and the CPU used <span class="choice" id="cpu-choice">ROCK✊🏼</span>
+            </p>
+            <p id="wins-point">You won a point!🔥</p>
+        </div>
+        <button class="btn disabled" id="reload">Reload</button>
+    </main>
+</body>
+<script src="./app.js"></script>
+</html>
